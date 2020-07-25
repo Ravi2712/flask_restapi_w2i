@@ -1,0 +1,8 @@
+# READ MORE HERE: https://cloud.google.com/appengine/docs/standard/
+
+runtime: python37
+
+entrypoint: gunicorn -b :$PORT main:app
+
+manual_scaling:
+  instances: 1
